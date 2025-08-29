@@ -12,6 +12,9 @@ fi
 EOF
 source .bashrc
 
+# Add alias for going back to workspaces folder
+echo 'alias cdw="cd $CODESPACE_VSCODE_FOLDER"' >> ~/.bashrcdir/codespaces.bash
+
 # Install AWS CLI
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
