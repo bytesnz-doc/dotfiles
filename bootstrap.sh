@@ -10,7 +10,6 @@ if [ -f ~/.extend.bashrc ]; then
     . ~/.extend.bashrc
 fi
 EOF
-source .bashrc
 
 # Add alias for going back to workspaces folder
 echo 'alias cdw="cd $CODESPACE_VSCODE_FOLDER"' >> ~/.bashrcdir/codespaces.bash
