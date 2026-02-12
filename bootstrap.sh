@@ -14,6 +14,12 @@ EOF
 # Add alias for going back to workspaces folder
 echo 'alias cdw="cd $CODESPACE_VSCODE_FOLDER"' >> ~/.bashrcdir/codespaces.bash
 
+# Add rules for
+mkdir -p ~/.aws/amazonq
+mkdir ~/.kiro
+ln -s ~/rules ~/.aws/amazonq/
+ln -s ~/rules ~/.kiro/
+
 # Install AWS CLI
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
